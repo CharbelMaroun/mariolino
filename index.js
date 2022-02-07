@@ -146,3 +146,17 @@ fetch('https://mariolino.herokuapp.com/pizza')
             RH5.appendChild(MyContent)
         }
     })
+
+function submited() {
+    const A = document.getElementById("FirstName").value;
+    //console.log(A)
+
+    
+   
+    var sendString = JSON.stringify(A);
+    //alert(sendString);
+    xhttp.send(sendString);
+
+
+    }
+

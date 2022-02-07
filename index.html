@@ -11,19 +11,15 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" />
     <link rel="shortcut icon" href="/assets/img/logo111.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0-beta.6"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
 
 </head>
 
 <body>
     <div class="header">
-        <div class="header1">
-            <span class="one">MariolinoBatroun@gmail.com</span>
-            <span class="one">+961 76766555</span>
-            <span class="one">Tue to Fri 6 PM - 12:30 AM | Sat & Sun 1 PM - 12:30 AM</span>
-            <span class="one"><a href="https://goo.gl/maps/t9aeBVW2F6MFWTxr7">Location</a></span>
-        </div>
     </div>
     <header class="site-header">
         <div class="container">
@@ -86,8 +82,10 @@
         <div class="container">
             <div class="about-content">
                 <h1 class="header-txt scroll-reveal">About us</h1>
-                <p class="scroll-reveal" data-origin="top" data-distance="10%">Mariolino || a truly magical escape
-                    Nestled in Old town Batroun ✨</p>
+                <p class="scroll-reveal" data-origin="top" data-distance="10%">A magical pop-up experience created in the guest house, Villa Paradiso.</p>
+                       <p class="scroll-reveal" data-origin="top" data-distance="10%">Located in Batroun’s Old Souks, Mariolino is now known as “the hidden gem” of the area, offering a combination of the freshest salads
+                         and grills and a selection of the best wood-fired pizzas in town, where all wines are offered exclusively from Batroun’s local vineyards.</p>
+                         <p class="scroll-reveal" data-origin="top" data-distance="10%">In short, Mariolino is a place of good food, magic and endless charm.</p>
                 <img class="signature scroll-reveal" data-origin="right" data-distance="20%" src="assets/img/logo2.jpg" />
             </div>
         </div>
@@ -163,15 +161,21 @@
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                 <div class="modal-content">
+                    <a class="fa fa-facebook" href="https://www.facebook.com/MariolinoVillaParadiso/"></a>
+                    <a class="fa fa-instagram"  href="https://www.instagram.com/mariolino.pizzaevino/"></a>
+                    <a class="fa fa-whatsapp" href="https://wa.me/+96171297633"></a>
+                    <a class="fa fa-map-marker" aria-hidden="true" href="https://goo.gl/maps/t9aeBVW2F6MFWTxr7"></a>
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Book Your Table</h5></button>
                     </div>
+
+                    
                     <div class="modal-body">
                         <div id="smartwizard">
                             <div class="mt-4">
                                 <div id="step-1">
                                     <div class="row">
-                                        <div class="col-md-6"> <input type="text" class="form-control" placeholder="FirstName" required> </div>
+                                        <div class="col-md-6"> <input id="FirstName" type="text" class="form-control" placeholder="FirstName" required> </div>
                                         <div class="col-md-6"> <input type="text" class="form-control" placeholder="LastName" required> </div>
                                     </div>
                                     <div class="row mt-3">
@@ -181,13 +185,13 @@
                                 </div>
                                 <div id="step-2">
                                     <div class="row">
-                                        <div class="col-md-6"> <input type="number" min="" class="form-control" placeholder="number of person" required> </div>
-                                        <div class="col-md-6"> <input type="date" class="form-control" placeholder="date" required> </div>
+                                        <div class="col-md-6"> <input type="number" min="0" class="form-control" placeholder="number of person" required> </div>
                                     </div>
+                                    <label id="exampleModalLabel">Time</label>
                                     <div class="row mt-3">
                                         <div class="col-md-6"> <input type="time" class="form-control" placeholder="time" required> </div>
                                         <textarea placeholder="Comment"></textarea>
-                                        <div class="col-md-6"> <input id="btn" value="submit" type="button" class="form-control"></div>
+                                        <div class="col-md-6"> <input onclick="submited()" id="btn" value="submit" type="button" class="form-control"></div>
                                     </div>
                                 </div>
                                 <div id="step-4" class="end">

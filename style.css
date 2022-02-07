@@ -146,3 +146,46 @@ button:focus {
     margin: 20px;
 }
 
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      background: white;
+      color: #3B5998;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    float: right;
+  }
+  
+  .fa-instagram {
+    background: #E34271;
+    color: white;
+    float: right;
+  }
+
+  .fa-whatsapp {
+    background: #57F773;
+    color: white;
+    float: right;
+  }
+  
+  .fa-map-marker {
+    background: red;
+    color: white;
+    float: right;
+  }
+  
+  .about{
+      height: 900px;
+
+  }
